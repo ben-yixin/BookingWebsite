@@ -1,0 +1,92 @@
+<!--admin.html
+The front page of the admin function, allows user to display all available taxis within
+2 hours from the current time. Allows user to assign a taxi to a previously unassigned reference number
+@author Ben Zhang 15904358-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Admin Page</title>
+    <h1>Admin Page</h1>
+    <script type="text/javascript" src="xhr.js"></script>
+        <script type="text/javascript" defer src="admin.js"></script>
+        <script type="text/javascript" src = "adminajax.js"></script>
+</head>
+<body>
+    <style>
+h1 {
+font-size: 40px;
+padding: 24px;
+}
+body {
+  background-color:#F5FFFA;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 10px;
+}
+.box {
+  display: -ms-flexbox; 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 16px;
+}
+input[type=text],input[type=date],input[type=time] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type=text]:focus {
+  border: 2px solid #555;
+}
+#assign, #search-submit {
+  background-color: grey; 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#assign:hover, #search-submit:hover {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+}
+a {
+    color: orange;
+    position: absolute;
+    bottom: 10px;
+}
+
+</style>
+<div class="box">
+    <div class="container">
+      <form id = "formsearch">
+        <label for "search"></label>
+        <div id = "search">
+        <button id = "search-submit" type = "submit" name = "search" >Search</button>
+        </div>
+        </br>
+        </br>
+        <label for "taxi">Taxi</label>
+        <input id = "taxi" type = "text" name = "taxi" placeholder = "#000000A">
+        <button id = "assign" type = "submit" name = "assign" >Assign Taxi</button>
+        </br>
+      </form>
+      <div id = "results">
+          <p>Results will be displayed here</p>
+      </div>
+    </div>
+</div>
+<br><br><br>
+<a href = "booking.html">Navigate to admin.html</a> 
+</body>
+</html>
