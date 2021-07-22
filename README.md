@@ -1,2 +1,2 @@
 # BookingWebsite
-Simple booking site.
+Simple booking site created as an assignment.
