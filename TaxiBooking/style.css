@@ -1,0 +1,88 @@
+h1 {
+    font-size: 40px;
+    padding: 24px;
+    }
+    body {
+      background-color:#F5FFFA;
+      font-family: Arial;
+      font-size: 18px;
+      padding: 10px;
+    }
+    .box{
+      display: -ms-flexbox; 
+      display: flex;
+      -ms-flex-wrap: wrap; 
+      flex-wrap: wrap;
+      margin: 0 16px;
+    }
+    
+    
+    #error:empty{
+      background-color: salmon;
+      display:inline-block;
+      width:180px;
+      color: red;
+      border:0px solid red;
+      font-size: 10px;
+    }
+    #error{
+      background-color: salmon;
+      display:inline-block;
+      width:180px;
+      color: red;
+      border:3px solid red;
+      font-size: 10px;
+    }
+    #booking-message{
+      position:absolute;
+      background-color: #90EE90;
+      display:inline-block;
+      width:600px;
+      color: green;
+      border:3px solid green;
+      font-size: 10px;
+    }
+    #booking-message:empty{
+      background-color: #90EE90;
+      display:inline-block;
+      width:600px;
+      color: green;
+      border:0px solid green;
+      font-size: 10px;
+    }
+    input[type=text],input[type=date],input[type=time] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    input[type=text]:focus {
+      border: 2px solid #555;
+    }
+    #booking-submit {
+      background-color: grey; 
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #booking-submit:hover {
+      background-color: orange;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor:pointer;
+    }
+    a {
+        color: orange;
+        position: absolute;
+        bottom: 10px;
+    }
